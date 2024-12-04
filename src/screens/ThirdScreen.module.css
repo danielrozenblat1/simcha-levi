@@ -1,0 +1,155 @@
+.title {
+  font-family: 'Assistant', sans-serif;
+  font-size: 2rem;
+  direction: rtl;
+  margin: 2% auto;
+  text-align: center;
+}
+
+.header {
+  font-family: 'Comorant', sans-serif;
+  font-size: 4rem;
+  direction: rtl;
+  margin: 2% auto;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+
+.description {
+  font-family: 'AssistantR', sans-serif;
+  font-size: 1.4rem;
+  color: #281916;
+  text-align: center;
+  margin-bottom: 20px;
+  direction: rtl;
+}
+
+/* Under 350px */
+@media screen and (max-width: 349px) {
+  .title {
+    font-size: 1.2rem;
+  }
+  .header {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+}
+
+/* 350px - 450px */
+@media screen and (min-width: 350px) and (max-width: 450px) {
+  .title {
+    font-size: 1.3rem;
+  }
+  .header {
+    font-size: 2.2rem;
+  }
+  .description {
+    font-size: 1.1rem;
+  }
+}
+
+/* 450px - 550px */
+@media screen and (min-width: 451px) and (max-width: 550px) {
+  .title {
+    font-size: 1.4rem;
+  }
+  .header {
+    font-size: 2.4rem;
+  }
+  .description {
+    font-size: 1.15rem;
+  }
+}
+
+/* 550px - 650px */
+@media screen and (min-width: 551px) and (max-width: 650px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .header {
+    font-size: 2.6rem;
+  }
+  .description {
+    font-size: 1.2rem;
+  }
+}
+
+/* 650px - 750px */
+@media screen and (min-width: 651px) and (max-width: 750px) {
+  .title {
+    font-size: 1.6rem;
+  }
+  .header {
+    font-size: 2.8rem;
+  }
+  .description {
+    font-size: 1.25rem;
+  }
+}
+
+/* 750px - 850px */
+@media screen and (min-width: 751px) and (max-width: 850px) {
+  .title {
+    font-size: 1.7rem;
+  }
+  .header {
+    font-size: 3rem;
+  }
+  .description {
+    font-size: 1.3rem;
+  }
+}
+
+/* 850px - 950px */
+@media screen and (min-width: 851px) and (max-width: 950px) {
+  .title {
+    font-size: 1.8rem;
+  }
+  .header {
+    font-size: 3.2rem;
+  }
+  .description {
+    font-size: 1.32rem;
+  }
+}
+
+/* 950px - 1050px */
+@media screen and (min-width: 951px) and (max-width: 1050px) {
+  .title {
+    font-size: 1.9rem;
+  }
+  .header {
+    font-size: 3.4rem;
+  }
+  .description {
+    font-size: 1.35rem;
+  }
+}
+
+/* 1050px - 1150px */
+@media screen and (min-width: 1051px) and (max-width: 1150px) {
+  .title {
+    font-size: 1.95rem;
+  }
+  .header {
+    font-size: 3.7rem;
+  }
+  .description {
+    font-size: 1.37rem;
+  }
+}
+
+/* 1150px - 1250px */
+@media screen and (min-width: 1151px) and (max-width: 1250px) {
+  .title {
+    font-size: 2rem;
+  }
+  .header {
+    font-size: 4rem;
+  }
+  .description {
+    font-size: 1.4rem;
+  }
+}
