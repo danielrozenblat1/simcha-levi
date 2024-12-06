@@ -78,7 +78,7 @@
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #1a1a1a;
+  background-color: #000;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -113,8 +113,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   color: #000;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -148,8 +148,8 @@
 }
 
 .icon {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   stroke-width: 1.5px;
   position: relative;
   z-index: 1;
@@ -272,7 +272,7 @@
   height: 1px;
   bottom: 4px;
   left: 0;
-  background-color: #1a1a1a;
+  background-color: #000;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
