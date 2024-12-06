@@ -78,7 +78,7 @@
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #1a1a1a;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -113,8 +113,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   color: #000;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -148,8 +148,8 @@
 }
 
 .icon {
-  width: 24px;
-  height: 24px;
+  width: 25px;
+  height: 25px;
   stroke-width: 1.5px;
   position: relative;
   z-index: 1;
@@ -157,8 +157,8 @@
 
 .hamburger {
   cursor: pointer;
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   transition: all 0.3s ease;
   z-index: 1501;
@@ -168,6 +168,7 @@
   background: transparent;
   border: none;
   outline: none;
+  color: black;
   position: relative;
   overflow: hidden;
 }
@@ -272,7 +273,7 @@
   height: 1px;
   bottom: 4px;
   left: 0;
-  background-color: #000;
+  background-color: #1a1a1a;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);

@@ -119,7 +119,7 @@ const NavBarNew = () => {
           className={styles.iconContainer}
           aria-label="Instagram"
         >
-          <Instagram className={styles.icon} />
+          <Instagram  size={20} className={styles.icon} />
         </a>
         <button 
           onClick={handleClick} 
