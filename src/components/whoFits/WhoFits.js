@@ -1,10 +1,37 @@
 // MatchingCriteria.jsx
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Heart, Brain, Users, Clock, Palette, ThumbsDown, Ban, Zap, Coffee, Group } from 'lucide-react';
 import styles from './WhoFits.module.css';
 import Button from '../button/Button';
-
+import ScrollReveal from 'scrollreveal';
 const MatchingCriteria = () => {
+
+
+  useEffect(()=>{
+    ScrollReveal().reveal(`.${styles.sectionTitle}`, {
+        duration: 1000,
+        distance: "30px",
+        origin: "top", // Start from the right side
+        easing: "ease-out",
+        reset:false,
+        viewFactor: 0.2,
+        interval: 300, // Delay between each element
+        delay: 200, // Delay before the animation starts
+        scale: 1, // Set scale to 1 or null
+      });
+      ScrollReveal().reveal(`.${styles.icon}`, {
+        duration: 1000,
+        distance: "30px",
+        origin: "right", // Start from the right side
+        easing: "ease-out",
+        reset:false,
+        viewFactor: 0.2,
+        interval: 300, // Delay between each element
+        delay: 200, // Delay before the animation starts
+        scale: 1, // Set scale to 1 or null
+      });
+  },[])
+
   const matches = [
     { text: "את לא מפחדת מהערות וביקורת בונה", icon: Brain },
     { text: "את מחפשת להשתפר ולהתפרנס מתחום האיפור בכבוד", icon: Palette },

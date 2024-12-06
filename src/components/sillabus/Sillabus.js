@@ -1,8 +1,36 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Clock, Users, Camera, Award, PhoneCall, FileText, Star } from 'lucide-react';
 import styles from './Sillabus.module.css';
-
+import ScrollReveal from 'scrollreveal';
 const MakeupCourse = () => {
+
+
+
+  useEffect(()=>{
+    ScrollReveal().reveal(`.${styles.featureItem}`, {
+        duration: 1000,
+        distance: "30px",
+        origin: "top", // Start from the right side
+        easing: "ease-out",
+        reset:false,
+        viewFactor: 0.2,
+        interval: 300, // Delay between each element
+        delay: 200, // Delay before the animation starts
+        scale: 1, // Set scale to 1 or null
+      });
+      ScrollReveal().reveal(`.${styles.detailsRow}`, {
+        duration: 1000,
+        distance: "30px",
+        origin: "right", // Start from the right side
+        easing: "ease-out",
+        reset:false,
+        viewFactor: 0.2,
+        interval: 300, // Delay between each element
+        delay: 200, // Delay before the animation starts
+        scale: 1, // Set scale to 1 or null
+      });
+  },[])
+
   const courseFeatures = [
     {
       title: "טכניקות מתקדמות",
@@ -33,7 +61,7 @@ const MakeupCourse = () => {
   return (
     <div className={styles.container}>
       <div className={styles.courseIntro}>
-        <strong>הקורס הוא אישי </strong>,20 שעות (4 מפגשים של חמש שעות) שבהם את הולכת ללמוד:
+        <strong>הקורס הוא אישי </strong>(6 מפגשים) שבהם את הולכת ללמוד:
       </div>
       
       <div className={styles.featuresList}>
