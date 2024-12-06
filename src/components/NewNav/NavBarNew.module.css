@@ -59,7 +59,7 @@
 }
 
 .menuItems a {
-  color: #1a1a1a;
+  color: #000;
   text-decoration: none;
   font-family: "AssistantR";
   font-size: 1.1rem;
@@ -115,7 +115,7 @@
   justify-content: center;
   width: 30px;
   height: 30px;
-  color: #1a1a1a;
+  color: #000;
   text-decoration: none;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -245,7 +245,7 @@
 }
 
 .mobileMenuItem {
-  color: #1a1a1a;
+  color: #000;
   text-decoration: none;
   font-size: 1.3rem;
   font-family: "AssistantR";
