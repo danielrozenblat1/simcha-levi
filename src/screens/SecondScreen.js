@@ -6,6 +6,7 @@ import money from "../Icons/wired-outline-414-money-bag-dollar-hover-shake (2).j
 import Recommends from "../components/recommends/Recommends"
 import InstagramVideo from "../components/igVideo/IgVideo"
 import { AlertCircle } from "lucide-react"
+import StudentsWorks from "../components/recommends/StudentsWorks"
 const SecondScreen=()=>{
 
 
@@ -30,7 +31,7 @@ const SecondScreen=()=>{
     <div className={styles.title}>שתצאי מאפרת</div>
     <InstagramVideo postUrl="https://www.instagram.com/reel/C_n5v4dos4x/?igsh=MTJwZGZvbTh1aGwwYg=="/>
     <div className={styles.description}>הגישה הזו יוצרת תוצאות! ולהמחשה.. הנה כמה עבודות של תלמידות שלי מיד אחרי שסיימו את הקורס!</div>
-    {/* עבודות של תלמידות אחרי שסיימו את הקורס */}
+    <StudentsWorks/>
     </>
 }
 export default SecondScreen

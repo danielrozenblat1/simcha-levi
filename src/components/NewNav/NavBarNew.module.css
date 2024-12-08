@@ -99,16 +99,6 @@
   align-items: center;
 }
 
-@media (max-width: 850px) {
-  .socialIcons {
-    gap: 12px;
-  }
-  
-  .navbar {
-    padding: 0 20px;
-  }
-}
-
 .iconContainer {
   display: flex;
   align-items: center;
@@ -148,9 +138,8 @@
 }
 
 .icon {
-  width: 25px;
-  height: 25px;
-  stroke-width: 1.5px;
+  width: 20px;
+  height: 20px;
   position: relative;
   z-index: 1;
 }
@@ -315,6 +304,16 @@
   .mobileMenu {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+  }
+}
+
+@media (max-width: 850px) {
+  .socialIcons {
+    gap: 12px;
+  }
+  
+  .navbar {
+    padding: 0 20px;
   }
 }
 
