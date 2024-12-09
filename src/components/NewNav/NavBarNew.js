@@ -116,19 +116,15 @@ const NavBarNew = () => {
           href="https://www.instagram.com/simchallevi/"
           target="_blank"
           rel="noopener noreferrer"
-          className={styles.iconContainer}
+   
           aria-label="Instagram"
         >
           <FaInstagram className={styles.icon} />
         </a>
      
-        <button 
-          onClick={handleClick} 
-          className={styles.iconContainer}
-          aria-label="WhatsApp"
-        >
-          <FaWhatsapp className={styles.icon} />
-        </button>
+     
+        <a  onClick={handleClick}> <FaWhatsapp className={styles.icon} /></a> 
+
       </div>
     </nav>
   );
