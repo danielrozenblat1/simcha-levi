@@ -299,65 +299,212 @@
   opacity: 0.9;
 }
 
+/* Responsive Design */
+@media (min-width: 1150px) and (max-width: 1250px) {
+  .menuItems {
+    gap: 35px;
+  }
+  .menuItems a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1050px) and (max-width: 1150px) {
+  .menuItems {
+    gap: 30px;
+  }
+  .menuItems a {
+    font-size: 0.95rem;
+  }
+  .navbar {
+    padding: 0 35px;
+  }
+}
+
+@media (min-width: 950px) and (max-width: 1050px) {
+  .menuItems {
+    gap: 25px;
+  }
+  .menuItems a {
+    font-size: 0.9rem;
+  }
+  .navbar {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 950px) {
+  .menuItems {
+    gap: 20px;
+  }
+  .menuItems a {
+    font-size: 0.85rem;
+  }
+  .navbar {
+    padding: 0 25px;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 850px) {
+  .navbar {
+    padding: 0 25px;
+  }
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+  .iconContainer {
+    width: 45px;
+    height: 45px;
+  }
+  .hamburger .icon {
+    width: 35px;
+    height: 35px;
+  }
+  .logo img {
+    height: 35px;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 750px) {
+  .navbar {
+    padding: 0 22px;
+    height: 75px;
+  }
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+  .iconContainer {
+    width: 45px;
+    height: 45px;
+  }
+  .hamburger .icon {
+    width: 35px;
+    height: 35px;
+  }
+  .logo img {
+    height: 35px;
+  }
+  .mobileMenuItem {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 650px) {
+  .navbar {
+    padding: 0 20px;
+    height: 75px;
+  }
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+  .iconContainer {
+    width: 45px;
+    height: 45px;
+  }
+  .hamburger .icon {
+    width: 35px;
+    height: 35px;
+  }
+  .logo img {
+    height: 35px;
+  }
+  .mobileMenuItem {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 550px) {
+  .navbar {
+    padding: 0 18px;
+    height: 70px;
+  }
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+  .iconContainer {
+    width: 45px;
+    height: 45px;
+  }
+  .hamburger .icon {
+    width: 35px;
+    height: 35px;
+  }
+  .logo img {
+    height: 32px;
+  }
+  .mobileMenuItem {
+    font-size: 1.15rem;
+  }
+  .socialIcons {
+    gap: 15px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+  .navbar {
+    padding: 0 15px;
+    height: 70px;
+  }
+  .icon {
+    width: 25px;
+    height: 25px;
+  }
+  .iconContainer {
+    width: 35px;
+    height: 35px;
+  }
+  .hamburger .icon {
+    width: 35px;
+    height: 35px;
+  }
+  .logo img {
+    height: 30px;
+  }
+  .mobileMenuItem {
+    font-size: 1.1rem;
+  }
+  .socialIcons {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 350px) {
+  .navbar {
+    padding: 0 12px;
+    height: 65px;
+  }
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+  .iconContainer {
+    width: 25px;
+    height: 25px;
+  }
+  .hamburger .icon {
+    width: 35px;
+    height: 35px;
+  }
+  .logo img {
+    height: 28px;
+  }
+  .mobileMenuItem {
+    font-size: 1rem;
+  }
+  .socialIcons {
+    gap: 10px;
+  }
+}
+
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
   .sticky,
   .mobileMenu {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-  }
-}
-
-@media (max-width: 850px) {
-  .socialIcons {
-    gap: 16px;
-  }
-  
-  .navbar {
-    padding: 0 20px;
-  }
-
-  .icon {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .iconContainer {
-    width: 36px;
-    height: 36px;
-  }
-
-  .hamburger .icon {
-    width: 24px;
-    height: 24px;
-  }
-}
-
-@media (max-width: 480px) {
-  .mobileMenuItem {
-    font-size: 1.2rem;
-  }
-  
-  .image {
-    width: 100px;
-  }
-  
-  .navbar {
-    height: 70px;
-  }
-
-  .icon {
-    width: 26px;
-    height: 26px;
-  }
-  
-  .iconContainer {
-    width: 40px;
-    height: 40px;
-  }
-
-  .hamburger .icon {
-    width: 26px;
-    height: 26px;
   }
 }
 
