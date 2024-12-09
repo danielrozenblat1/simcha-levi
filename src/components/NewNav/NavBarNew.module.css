@@ -453,9 +453,10 @@
     width: 35px;
     height: 35px;
   }
-  .hamburger .icon {
-    width: 35px;
-    height: 35px;
+  .hamburger {
+  
+    width: 30px;
+    height: 30px;
   }
   .logo img {
     height: 30px;
@@ -481,7 +482,7 @@
     width: 25px;
     height: 25px;
   }
-  .hamburger .icon {
+  .hamburger{
     width: 35px;
     height: 35px;
   }
