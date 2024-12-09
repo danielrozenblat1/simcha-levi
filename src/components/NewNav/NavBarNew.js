@@ -53,7 +53,7 @@ const NavBarNew = () => {
     <nav className={navbarClasses}>
       {windowWidth <= 850 && (
         <button 
-           className={styles.icon}
+          className={styles.hamburger} 
           onClick={toggleMenu}
           aria-label="תפריט"
         >

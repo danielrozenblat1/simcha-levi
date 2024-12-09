@@ -141,21 +141,14 @@
 }
 
 .hamburger {
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-  z-index: 1501;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
+
+  position: relative;
+  text-decoration: none;
+  color: black;
   border: none;
   outline: none;
-  color: black;
-  position: relative;
-  overflow: hidden;
+  background: none;
+  z-index: 1501;
 }
 
 .hamburger::before {
