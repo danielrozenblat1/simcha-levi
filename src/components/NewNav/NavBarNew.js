@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink } from "react-scroll";
 import styles from './NavBarNew.module.css';
 import logo from "../../images/שמחה לוי לוגו.png";
-import { FaInstagram, FaWhatsapp, FaBars, FaTimes } from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaWhatsapp, FaBars, FaTimes } from 'react-icons/fa';
 
 const NavBarNew = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -119,8 +119,9 @@ const NavBarNew = () => {
           className={styles.iconContainer}
           aria-label="Instagram"
         >
-          <FaInstagram className={styles.icon} strokeWidth={0.5} />
+          <FaInstagram className={styles.icon} />
         </a>
+     
         <button 
           onClick={handleClick} 
           className={styles.iconContainer}
