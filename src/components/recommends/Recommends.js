@@ -25,24 +25,25 @@ const Recommends=()=>{
                      
       };
       const content = [
+    
+       
         {
           type: 'image',
-          src: result1,
-        },
-       
-      
+          src: result4,
+        }, 
         {
           type: 'image',
           src: result2,
         },
         {
           type: 'image',
-          src: result3,
+          src: result1,
         },
         {
           type: 'image',
-          src: result4,
-        }, 
+          src: result3,
+        },
+      
         
        
         ];  

@@ -74,7 +74,7 @@ const FirstScreen = ({ scrolled }) => {
   return (
     <div className={scrolled ? styles.containerP : styles.container}>
       <div className={styles.descriptionWrapper}>
-        <div className={styles.description}>במיוחד למאפרות בתחילת דרכן ולבנות שרוצות להתחיל ללמוד את התחום</div>
+        <div className={styles.description}>במיוחד לבנות שרוצות להתחיל ללמוד את התחום ולמאפרות בתחילת דרכן</div>
       </div>
       <div className={styles.explainContainer}>
         <div className={styles.imageContainer}>

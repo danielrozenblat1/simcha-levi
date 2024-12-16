@@ -7,9 +7,22 @@ import Recommends from "../components/recommends/Recommends"
 import InstagramVideo from "../components/igVideo/IgVideo"
 import { AlertCircle } from "lucide-react"
 import StudentsWorks from "../components/recommends/StudentsWorks"
+import { useEffect } from "react"
+import ScrollReveal from "scrollreveal"
 const SecondScreen=()=>{
-
-
+    useEffect(() => {
+        ScrollReveal().reveal(`.${styles.title}`, {
+          duration: 1200,
+          scale: 0.5, // מתחיל ב-50% מהגודל המקורי
+          distance: "0px", // מבטל את התזוזה האנכית
+          origin: "center", // האנימציה תתחיל מהמרכז
+          easing: "ease-out",
+          reset: false,
+          viewFactor: 0.2,
+          interval: 300,
+          delay: 200
+        });
+      }, []);
     return <>
  <div className={styles.title}>כל תלמידה שלי</div>
 <div className={styles.row}>

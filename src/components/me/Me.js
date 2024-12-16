@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Me.module.css';
-import simcha from "../../images/שמחה תמונה ימין.png";
+import simcha from "../../images/שמחה לוי.png";
 
 
 const AboutMe = () => {

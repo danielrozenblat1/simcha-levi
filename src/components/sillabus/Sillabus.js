@@ -61,7 +61,7 @@ const MakeupCourse = () => {
   return (
     <div className={styles.container}>
       <div className={styles.courseIntro}>
-        <strong>הקורס הוא אישי </strong>(6 מפגשים) שבהם את הולכת ללמוד:
+        <strong>הקורס הוא אישי </strong>6 מפגשים שבהם את הולכת ללמוד:
       </div>
       
       <div className={styles.featuresList}>
