@@ -45,7 +45,7 @@ const NavBarNew = () => {
     document.body.style.overflow = 'auto';
   };
 
-  const menuItems = ['שירותים נוספים', 'H.F.T.M', 'שאלות תשובות', 'מי אני'];
+  const menuItems = [ 'תלמידות ממליצות', 'שאלות תשובות', 'מי אני'];
 
   const navbarClasses = `${styles.navbar} ${isSticky ? styles.sticky : ''} ${hasScrolled ? styles.scrolled : ''}`;
 
