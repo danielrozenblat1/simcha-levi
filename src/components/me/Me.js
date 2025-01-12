@@ -1,8 +1,10 @@
 import React from 'react';
 import styles from './Me.module.css';
 import simcha from "../../images/שמחה לוי.png";
-
-
+import Works from '../recommends/Works';
+import ishi1 from "../../images/שמחה לוי אישי 1.png"
+import ishi2 from "../../images/שמחה לוי אישי 2.png"
+import ishi3 from "../../images/שמחה לוי אישי 3.png"
 const AboutMe = () => {
   return (
     <>
@@ -22,6 +24,13 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
+      <div className={styles.subheader}>אני מתמחה באיפור הוליוודי ונהנת להדגים אותו גם על עצמי</div>
+      <div className={styles.row}>
+      <img src={ishi1} alt="שמחה לוי אישי" className={styles.image2} />
+      <img src={ishi2} alt="שמחה לוי אישי" className={styles.image2} />
+      <img src={ishi3} alt="שמחה לוי אישי" className={styles.image2} />
+      </div>
+      <Works/>
     </>
   );
 };

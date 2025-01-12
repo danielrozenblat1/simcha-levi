@@ -128,7 +128,7 @@ height: auto;
 @media only screen and (min-width: 350px) and (max-width: 450px) {
 
     .sliderContainer {
-        width: 55%;
+        width: 65%;
         margin: auto;
         height: auto;
         
@@ -161,7 +161,7 @@ height: auto;
       .title{
         font-size: 2rem;
         direction: rtl;
-        width:75%;
+        width:60%;
         color:black;
         justify-content: center;
         text-align: center;

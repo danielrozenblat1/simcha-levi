@@ -128,9 +128,7 @@
 
 /* Below 350px */
 @media screen and (max-width: 349px) {
-  .containerP {
-    padding-top: 50px;
-  }
+
   
   .explainContainer {
     margin-top: 120px;
@@ -172,12 +170,9 @@
 
 /* 350px - 450px */
 @media screen and (min-width: 350px) and (max-width: 450px) {
-  .containerP {
-    padding-top: 60px;
-  }
-  
+
   .explainContainer {
-    margin-top: 140px;
+    margin-top: 110px;
   }
   
   .imageContainer {
@@ -194,10 +189,15 @@
   
   .topLeftImage {
     left: -25px;
+    top:25px;
   }
   
   .topRightImage {
     right: -25px;
+    top:25px;
+  }
+  .centerImage{
+    top:15px;
   }
   
   .explain {
@@ -211,10 +211,7 @@
 
 /* 450px - 550px */
 @media screen and (min-width: 451px) and (max-width: 550px) {
-  .containerP {
-    padding-top: 65px;
-  }
-  
+
   .explainContainer {
     margin-top: 150px;
   }
@@ -233,10 +230,12 @@
   
   .topLeftImage {
     left: -35px;
+    top:25px;
   }
   
   .topRightImage {
     right: -35px;
+    top:25px;
   }
   
   .explain {

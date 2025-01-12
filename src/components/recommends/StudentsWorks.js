@@ -88,7 +88,7 @@ return <>
         </Slider>
       </div>
 
-<Button text="שמחה, בואי נדבר!"/>
+
 </>
 
 

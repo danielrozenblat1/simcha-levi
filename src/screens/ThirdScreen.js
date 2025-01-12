@@ -6,7 +6,7 @@ const ThirdScreen=()=>{
 
 
 return <>
-   <div className={styles.title}>שמחה דברי אלי! איך זה הולך לעבוד?</div>
+   <div className={styles.title}>בואי נדבר תכלס! איך זה הולך לעבוד?</div>
    <div className={styles.description}>אז כדי להוציא אותך מאפרת תותחית על ולשייף את היהלום שבך, הקורס הולך לעבוד כך:</div>
    <div className={styles.header} id="H.F.T.M">H.F.T.M</div>
    

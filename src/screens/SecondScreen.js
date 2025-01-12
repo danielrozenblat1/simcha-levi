@@ -9,6 +9,7 @@ import { AlertCircle } from "lucide-react"
 import StudentsWorks from "../components/recommends/StudentsWorks"
 import { useEffect } from "react"
 import ScrollReveal from "scrollreveal"
+import StudentsWorksCompleted from "../components/recommends/StudentsWorksCompleted"
 const SecondScreen=()=>{
     useEffect(() => {
         ScrollReveal().reveal(`.${styles.title}`, {
@@ -43,8 +44,13 @@ const SecondScreen=()=>{
     <div className={styles.description}>את הולכת לקבל דגשים וביקורות ואת לא תשמעי ממני סתם מחמאות כי לי אכפת רק מדבר אחד</div>
     <div className={styles.title}>שתצאי מאפרת</div>
     <InstagramVideo postUrl="https://www.instagram.com/reel/C_n5v4dos4x/?igsh=MTJwZGZvbTh1aGwwYg=="/>
-    <div className={styles.description}>הגישה הזו יוצרת תוצאות! ולהמחשה.. הנה כמה עבודות של תלמידות שלי מיד אחרי שסיימו את הקורס!</div>
+    <div className={styles.description}>הגישה הזו יוצרת תוצאות! ולהמחשה.. התמונות שנמצאות כאן למטה הן עבודות <strong> שלי </strong> בשיטת האיפור שלי - חצי פנים</div>
+
     <StudentsWorks/>
+    <div className={styles.title}>והתמונות הבאות</div>
+    <div className={styles.description}>הן של התלמידות שלי כבר אחרי כמה מפגשים בודדים שהשלימו את חצי הפנים השני!</div>
+    <StudentsWorksCompleted/>
+
     </>
 }
 export default SecondScreen

@@ -6,8 +6,8 @@ const ForthScreen=()=>{
 
 
 return <>
-   <div className={styles.title}>שירותים נוספים</div>
-   <FilmCourse/>
+   {/* <div className={styles.title}>שירותים נוספים</div> */}
+   {/* <FilmCourse/> */}
 
 </>
 

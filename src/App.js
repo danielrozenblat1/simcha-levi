@@ -41,7 +41,7 @@ function App() {
   <NavBarNew/>
   <FirstScreen scrolled={scrolled}/>
  <SecondScreen/>
-<ThirdScreen/>
+{/* <ThirdScreen/> */}
 <MatchingCriteria/>
 <Students/>
 <AboutMe/>

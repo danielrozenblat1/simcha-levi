@@ -1,14 +1,21 @@
 import styles from "./Recommends.module.css"
-import result1 from "../../images/שמחה לוי המלצה 1.png"
-import result2 from "../../images/שמחה לוי המלצה 2.png"
-import result3 from "../../images/שמחה לוי המלצה 3.png"
-import result4 from "../../images/שמחה לוי המלצה 4.png"
-import result5 from "../../images/שמחה לוי המלצה 5.png"
+import result1 from "../../images/שמחה לוי חצי איפור שני 1.png"
+import result2 from "../../images/שמחה לוי חצי איפור שני 2.png"
+import result3 from "../../images/שמחה לוי חצי איפור שני 3.png"
+import result4 from "../../images/שמחה לוי חצי איפור שני 4.png"
+import result5 from "../../images/שמחה לוי חצי איפור שני 5.png"
+import result6 from "../../images/שמחה לוי חצי איפור שני 6.png"
+import result7 from "../../images/שמחה לוי חצי איפור שני 7.png"
+import result8 from "../../images/שמחה לוי חצי איפור שני 8.png"
+import result9 from "../../images/שמחה לוי חצי איפור שני 9.png"
+import result10 from "../../images/שמחה לוי חצי איפור שני 10.png"
+import result11 from "../../images/שמחה לוי חצי איפור שני 11.png"
+import result12 from "../../images/שמחה לוי חצי איפור שני 12.png"
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Button from "../button/Button"
-const Recommends=()=>{
+const StudentsWorksCompleted=()=>{
     const sliderSettings = {
      
         infinite: true,
@@ -25,29 +32,56 @@ const Recommends=()=>{
                      
       };
       const content = [
-    
         {
           type: 'image',
-          src: result5,
-        }, 
-        {
-          type: 'image',
-          src: result4,
-        }, 
+          src: result1,
+        },
+       
+      
         {
           type: 'image',
           src: result2,
         },
         {
           type: 'image',
-          src: result1,
+          src: result3,
         },
         {
           type: 'image',
-          src: result3,
+          src: result4,
+        }, 
+        {
+          type: 'image',
+          src: result8,
         },
-      
-        
+        {
+            type: 'image',
+            src: result5,
+          }, 
+          {
+            type: 'image',
+            src: result9,
+          },
+          {
+            type: 'image',
+            src: result10,
+          },
+          {
+            type: 'image',
+            src: result11,
+          },
+          {
+            type: 'image',
+            src: result12,
+          },
+          {
+            type: 'image',
+            src: result6,
+          }, 
+          {
+            type: 'image',
+            src: result7,
+          }, 
        
         ];  
 return <>
@@ -79,9 +113,9 @@ return <>
         </Slider>
       </div>
 
-<Button text="שמחה, בואי נדבר!"/>
+<Button text="שמחה, אני רוצה לתאם שיחה איתך!"/>
 </>
 
 
 }
-export default Recommends
+export default StudentsWorksCompleted
