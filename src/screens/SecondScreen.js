@@ -48,7 +48,8 @@ const SecondScreen=()=>{
 
     <StudentsWorks/>
     <div className={styles.title}>והתמונות הבאות</div>
-    <div className={styles.description}>הן של התלמידות שלי כבר אחרי כמה מפגשים בודדים שהשלימו את חצי הפנים השני!</div>
+    <div className={styles.description}>הן של התלמידות שלי שהשלימו את חצי הפנים השני! <strong> הרמה היא מאוד גבוהה והן מגיעות אליה כבר במהלך הקורס</strong></div>
+   
     <StudentsWorksCompleted/>
 
     </>

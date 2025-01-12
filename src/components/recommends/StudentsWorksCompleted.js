@@ -58,10 +58,7 @@ const StudentsWorksCompleted=()=>{
             type: 'image',
             src: result5,
           }, 
-          {
-            type: 'image',
-            src: result9,
-          },
+        
           {
             type: 'image',
             src: result10,
@@ -74,10 +71,7 @@ const StudentsWorksCompleted=()=>{
             type: 'image',
             src: result12,
           },
-          {
-            type: 'image',
-            src: result6,
-          }, 
+         
           {
             type: 'image',
             src: result7,
