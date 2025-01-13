@@ -31,12 +31,14 @@ const StudentsWorks=()=>{
           type: 'image',
           src: result1,
         },
-       
-      
         {
           type: 'image',
-          src: result2,
-        },
+          src: result5,
+        }, 
+        {
+          type: 'image',
+          src: result7,
+        }, 
         {
           type: 'image',
           src: result3,
@@ -46,17 +48,17 @@ const StudentsWorks=()=>{
           src: result4,
         }, 
         {
-            type: 'image',
-            src: result5,
-          }, 
+          type: 'image',
+          src: result2,
+        },
+      
+      
+       
           {
             type: 'image',
             src: result6,
           }, 
-          {
-            type: 'image',
-            src: result7,
-          }, 
+      
        
         ];  
 return <>
