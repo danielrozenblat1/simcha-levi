@@ -29,7 +29,7 @@ const Works = () => {
 
   return (
     <>
-      <div className={styles.title}>איפרתי בעצמי מאות נשים וכלות לאירועים שלהן</div>
+      <div className={styles.title} id="שירותים נוספים">איפרתי בעצמי מאות נשים וכלות לאירועים שלהן</div>
       <div className={styles.explain}>ואם את כאן כי את מאורסת או שיש לך אירוע בקרוב, הכנתי לך מקבץ קטן של נשים שעברו דרכי</div>
       <div className={styles.container}>
         <div className={styles.scrollTrack}>

@@ -45,7 +45,7 @@ const NavBarNew = () => {
     document.body.style.overflow = 'auto';
   };
 
-  const menuItems = [ 'תלמידות ממליצות', 'שאלות תשובות', 'מי אני'];
+  const menuItems = [ 'תלמידות ממליצות', 'שאלות תשובות', 'מי אני','שירותים נוספים',];
 
   const navbarClasses = `${styles.navbar} ${isSticky ? styles.sticky : ''} ${hasScrolled ? styles.scrolled : ''}`;
 
@@ -77,7 +77,7 @@ const NavBarNew = () => {
               to={item}
               smooth={true}
               offset={-100}
-              duration={700}
+              duration={1000}
               onClick={closeMenu}
               className={styles.mobileMenuItem}
               style={{ '--item-index': index }}
