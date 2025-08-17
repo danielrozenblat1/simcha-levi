@@ -1,0 +1,399 @@
+/* Base styles */
+.container, .containerP {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.containerP {
+  padding-top: 80px;
+}
+
+.descriptionWrapper:first-of-type {
+  font-family: 'AssistantR', sans-serif;
+  color: black;
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+  margin-bottom: 1rem;
+  z-index: 2;
+}
+
+.explainContainer {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  z-index: 2;
+  margin-top: 210px;
+  display: flex;
+  justify-content: center;
+}
+
+.imageContainer {
+  position: absolute;
+  top: -210px;
+  left: 0;
+  right: 0;
+  height: 240px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
+
+.topLeftImage,
+.topRightImage,
+.centerImage {
+  position: absolute;
+  width: 180px;
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.topLeftImage,
+.topRightImage {
+  transition: transform 0.1s ease-out;
+}
+
+.topLeftImage {
+  top: 0;
+  left: -60px;
+  transform: rotate(-20deg);
+  background-image: url('../images/שמחה\ לוי\ עבודות\ 1.png');
+}
+
+.topRightImage {
+  top: 0;
+  right: -60px;
+  transform: rotate(20deg);
+  background-image: url('../images/שמחה\ לוי\ עבודות\ 13.png');
+}
+
+.centerImage {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url('../images/שמחה\ לוי\ עבודות\ 6.png');
+  z-index: -2;
+}
+
+.explain {
+  font-family: 'Assistant', sans-serif;
+  font-size: 2rem;
+  color: black;
+  padding: 1.5rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.255);
+  backdrop-filter: blur(30px);
+  border-radius: 15px;
+  width: 100%;
+}
+
+.contentWrapper {
+  padding: 2.5rem;
+  width: 90%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.255);
+  backdrop-filter: blur(30px);
+  border-radius: 15px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.descriptionWrapper {
+  font-family: 'AssistantR', sans-serif;
+  color: #000000;
+  text-align: center;
+  width: 100%;
+}
+
+.description {
+  font-size: 1.5rem;
+  direction: rtl;
+  margin: 0.5rem 0;
+}
+
+/* Responsive Breakpoints */
+
+/* Below 350px */
+@media screen and (max-width: 349px) {
+
+  
+  .explainContainer {
+    margin-top: 120px;
+  }
+  
+  .imageContainer {
+    height: 130px;
+    top: -120px;
+  }
+  
+  .topLeftImage,
+  .topRightImage,
+  .centerImage {
+    width: 90px;
+    height: 120px;
+  }
+  
+  .topLeftImage {
+    left: -20px;
+  }
+  
+  .topRightImage {
+    right: -20px;
+  }
+  
+  .explain {
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+  }
+  
+  .contentWrapper {
+    padding: 1.5rem;
+  }
+}
+
+/* 350px - 450px */
+@media screen and (min-width: 350px) and (max-width: 450px) {
+
+  .explainContainer {
+    margin-top: 110px;
+  }
+  
+  .imageContainer {
+    height: 150px;
+    top: -140px;
+  }
+  
+  .topLeftImage,
+  .topRightImage,
+  .centerImage {
+    width: 100px;
+    height: 130px;
+  }
+  
+  .topLeftImage {
+    left: -25px;
+    top:25px;
+  }
+  
+  .topRightImage {
+    right: -25px;
+    top:25px;
+  }
+  .centerImage{
+    top:15px;
+  }
+  
+  .explain {
+    font-size: 1.6rem;
+  }
+  
+  .description {
+    font-size: 1.3rem;
+  }
+}
+
+/* 450px - 550px */
+@media screen and (min-width: 451px) and (max-width: 550px) {
+
+  .explainContainer {
+    margin-top: 150px;
+  }
+  
+  .imageContainer {
+    height: 170px;
+    top: -150px;
+  }
+  
+  .topLeftImage,
+  .topRightImage,
+  .centerImage {
+    width: 120px;
+    height: 150px;
+  }
+  
+  .topLeftImage {
+    left: -35px;
+    top:25px;
+  }
+  
+  .topRightImage {
+    right: -35px;
+    top:25px;
+  }
+  
+  .explain {
+    font-size: 1.7rem;
+  }
+  
+  .description {
+    font-size: 1.4rem;
+  }
+}
+
+/* 550px - 650px */
+@media screen and (min-width: 551px) and (max-width: 650px) {
+  .containerP {
+    padding-top: 75px;
+  }
+  
+  .explainContainer {
+    margin-top: 180px;
+  }
+  
+  .imageContainer {
+    height: 200px;
+    top: -180px;
+  }
+  
+  .topLeftImage,
+  .topRightImage,
+  .centerImage {
+    width: 140px;
+    height: 180px;
+  }
+  
+  .topLeftImage {
+    left: -45px;
+  }
+  
+  .topRightImage {
+    right: -45px;
+  }
+  
+  .explain {
+    font-size: 1.8rem;
+  }
+}
+
+/* 650px - 750px */
+@media screen and (min-width: 651px) and (max-width: 750px) {
+  .explainContainer {
+    margin-top: 190px;
+  }
+  
+  .imageContainer {
+    height: 210px;
+    top: -190px;
+  }
+  
+  .topLeftImage,
+  .topRightImage,
+  .centerImage {
+    width: 160px;
+    height: 200px;
+  }
+  
+  .topLeftImage {
+    left: -50px;
+  }
+  
+  .topRightImage {
+    right: -50px;
+  }
+}
+
+/* 750px - 850px */
+@media screen and (min-width: 751px) and (max-width: 850px) {
+  .explainContainer {
+    margin-top: 210px;
+  }
+  
+  .topLeftImage,
+  .topRightImage,
+  .centerImage {
+    width: 175px;
+    height: 230px;
+  }
+}
+
+/* 850px - 950px */
+@media screen and (min-width: 851px) and (max-width: 950px) {
+  .topLeftImage,
+  .topRightImage,
+  .centerImage {
+    width: 178px;
+    height: 235px;
+  }
+}
+
+/* 950px - 1050px */
+@media screen and (min-width: 951px) and (max-width: 1050px) {
+  /* Maintain default styles */
+}
+
+/* 1050px - 1150px */
+@media screen and (min-width: 1051px) and (max-width: 1150px) {
+  .topLeftImage,
+  .topRightImage,
+  .centerImage {
+    width: 185px;
+    height: 245px;
+  }
+  
+  .explain {
+    font-size: 2.1rem;
+  }
+  
+  .description {
+    font-size: 1.6rem;
+  }
+}
+
+/* 1150px - 1250px */
+@media screen and (min-width: 1151px) and (max-width: 1250px) {
+  .topLeftImage,
+  .topRightImage,
+  .centerImage {
+    width: 190px;
+    height: 250px;
+  }
+  
+  .explain {
+    font-size: 2.2rem;
+  }
+  
+  .description {
+    font-size: 1.7rem;
+  }
+}
+
+/* Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounceArrow {
+  animation: bounce 2s infinite;
+}
+
+.arrowContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+}

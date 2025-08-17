@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    max-width: 100%; /* Changed to allow full width */
+    margin: 0 auto;
+    padding: 0; /* Removed padding for full width */
+  }
+  
+  .embedContainer {
+    width: 20% !important;
+    max-width: none !important;
+    min-width: none !important;
+    margin: 2% auto !important;
+    padding: 0 !important;
+    border: none !important;
+    height:60vh;
+    box-shadow: none !important;
+  }
+  
+  .loadingContainer {
+    width: 30%;
+  
+    background-color: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loadingText {
+    font-size: 1rem;
+    color: #6b7280;
+    text-align: center;
+    direction: rtl;
+  }
+  

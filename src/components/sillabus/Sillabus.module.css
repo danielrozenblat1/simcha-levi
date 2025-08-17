@@ -1,0 +1,437 @@
+/* Base Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    direction: rtl;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Course Introduction */
+.courseIntro {
+    text-align: right;
+    font-family: 'AssistantR', sans-serif;
+    margin-bottom: 1.25rem;
+    font-size: 1.4rem;
+    color: #1a1a1a;
+    line-height: 1.5;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.courseIntro strong {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 700;
+    color: #1a1a1a;
+    position: relative;
+    padding-bottom: 1px;
+}
+
+.courseIntro strong::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+        to right,
+        rgba(212, 175, 55, 0),
+        rgba(212, 175, 55, 0.3) 20%,
+        rgba(212, 175, 55, 0.3) 80%,
+        rgba(212, 175, 55, 0)
+    );
+    border-radius: 2px;
+}
+
+/* Features List */
+.featuresList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.featureItem {
+    font-family: 'Assistant', sans-serif;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    padding: 1rem 1rem 1rem 1.75rem;
+    border-radius: 15px;
+
+  width:85%;
+  margin:2% auto;
+    position: relative;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.featureItem::before {
+    content: '';
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: 
+        linear-gradient(45deg, rgba(212, 175, 55, 0.15), rgba(244, 229, 175, 0.15)),
+        radial-gradient(circle at 33% 33%, rgba(212, 175, 55, 0.15) 0%, transparent 75%);
+    border: 1.5px solid rgba(212, 175, 55, 0.2);
+    opacity: 0.8;
+    transform: rotate(-45deg);
+}
+
+.featureItem h4 {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.featureItem p {
+    font-family: 'AssistantR', sans-serif;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Course Details */
+.courseDetails {
+   
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.detailsRow {
+    font-family: 'Assistant', sans-serif;
+    padding: 0.625rem;
+    border: none;
+
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.detailsRow:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: translateX(-4px);
+    box-shadow: 
+        0 4px 12px rgba(0, 0, 0, 0.03),
+        0 0 0 1px rgba(212, 175, 55, 0.15);
+}
+
+.benefitContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    padding-right: 0.5rem;
+}
+
+.benefitText {
+    font-family: 'AssistantR', sans-serif;
+    color: #1a1a1a;
+    font-size: 1.1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.icon {
+    color: #B8860B;
+    flex-shrink: 0;
+    stroke-width: 1.25;
+    padding: 0.25rem;
+    background: rgba(212, 175, 55, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detailsRow:hover .icon {
+    background: rgba(212, 175, 55, 0.15);
+    transform: scale(1.05);
+}
+
+.finalNote {
+    font-family: 'Assistant', sans-serif;
+    color: #666;
+    text-align: right;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+/*
+* ===============================
+* Responsive Design Breakpoints
+* ===============================
+*/
+
+/* Extra Large Screens: 1150px - 1250px */
+@media screen and (max-width: 1250px) {
+    .container {
+        max-width: 1150px;
+        padding: 1.75rem;
+        margin: 0.9rem auto;
+    }
+}
+
+/* Large Screens: 1050px - 1150px */
+@media screen and (max-width: 1150px) {
+    .container {
+        max-width: 1050px;
+        padding: 1.5rem;
+        margin: 0.8rem auto;
+    }
+    
+    /* Layout Adjustments */
+    .courseDetails { 
+        gap: 0.5rem; 
+    }
+    .featuresList { 
+        gap: 0.9rem; 
+    }
+}
+
+/* Medium-Large Screens: 950px - 1050px */
+@media screen and (max-width: 1050px) {
+    .container {
+        max-width: 950px;
+        padding: 1.4rem;
+        margin: 0.7rem auto;
+    }
+    
+    /* Grid Layout Changes */
+    .featuresList {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+}
+
+/* Medium Screens: 850px - 950px */
+@media screen and (max-width: 950px) {
+    .container {
+        max-width: 850px;
+        padding: 1.25rem;
+        margin: 0.6rem auto;
+    }
+    
+    /* Single Column Layout */
+    .courseDetails {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+}
+
+/* Small-Medium Screens: 750px - 850px */
+@media screen and (max-width: 850px) {
+    .container {
+        max-width: 750px;
+        padding: 1.15rem;
+        margin: 0.5rem auto;
+    }
+    
+    /* Font & Spacing Adjustments */
+    .courseIntro { 
+        font-size: 1.3rem; 
+    }
+    .featureItem { 
+        padding: 0.9rem; 
+    }
+}
+
+/* Small Screens: 650px - 750px */
+@media screen and (max-width: 750px) {
+    .container {
+        max-width: 100%;
+        padding: 0.75rem;
+        margin: 0.25rem auto;
+    }
+    
+    /* Mobile Layout Changes */
+    .courseIntro {
+        text-align: center;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+        padding: 0 0.5rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .courseIntro strong {
+        text-align: center;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .courseIntro strong::after {
+        right: 50%;
+        transform: translateX(50%);
+    }
+    
+    .featuresList {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0 0.25rem;
+    }
+    
+    .featureItem {
+        text-align: center;
+        padding: 1rem 0.75rem;
+    }
+
+    .featureItem::before {
+        left: 50%;
+        top: -15px;
+        transform: translateX(-50%);
+    }
+}
+
+/* Extra Small Screens: 550px - 650px */
+@media screen and (max-width: 650px) {
+    .container {
+        padding: 0.6rem;
+    }
+    
+    /* Typography Adjustments */
+    .courseIntro {
+        font-size: 1.2rem;
+        padding: 0 0.4rem;
+    }
+    
+    .featureItem {
+        padding: 1rem 0.5rem;
+    }
+    
+    .featureItem h4 {
+        font-size: 1.1rem;
+        margin: 0.5rem 0;
+    }
+
+    .courseDetails {
+        gap: 0.4rem;
+        margin: 0.75rem 0.15rem;
+    }
+}
+
+/* Mobile Large: 450px - 550px */
+@media screen and (max-width: 550px) {
+    .container {
+        padding: 0.5rem;
+        margin: 0.15rem auto;
+    }
+    
+    /* Font Size Reductions */
+    .courseIntro {
+        font-size: 1.15rem;
+        padding: 0 0.25rem;
+    }
+    
+    .featureItem { 
+        padding: 0.9rem 0.4rem; 
+    }
+    
+    .benefitText { 
+        font-size: 0.95rem; 
+    }
+
+    .courseDetails {
+        padding: 0.6rem;
+    }
+
+    .detailsRow {
+        padding: 0.5rem;
+    }
+}
+
+/* Mobile Medium: 350px - 450px */
+@media screen and (max-width: 450px) {
+    .container {
+        padding: 0.4rem;
+        margin: 0.1rem auto;
+    }
+    
+    /* Compact Layout */
+    .courseIntro {
+        font-size: 1.1rem;
+        padding: 0 0.15rem;
+    }
+    
+    .featureItem {
+        padding: 0.75rem 0.3rem;
+    }
+    
+    .featureItem::before {
+        width: 25px;
+        height: 25px;
+        top: -12px;
+    }
+
+    .detailsRow {
+        padding: 0.4rem;
+    }
+
+    .benefitContainer {
+        gap: 0.25rem;
+    }
+
+    .icon {
+        padding: 0.2rem;
+    }
+}
+
+/* Mobile Small: Below 350px */
+@media screen and (max-width: 350px) {
+    .container {
+        padding: 0.3rem;
+        margin: 0.05rem auto;
+    }
+    
+    /* Minimal Font Sizes */
+    .courseIntro { 
+        font-size: 1rem; 
+    }
+    
+    .featureItem {
+        padding: 0.65rem 0.25rem;
+    }
+    
+    .featureItem h4 { 
+        font-size: 0.95rem; 
+    }
+    
+    .featureItem p { 
+        font-size: 0.9rem; 
+    }
+
+    .courseDetails {
+        padding: 0.4rem;
+        margin: 0.5rem 0.1rem;
+    }
+
+    .detailsRow {
+        padding: 0.35rem;
+    }
+    
+    .benefitText { 
+        font-size: 0.9rem; 
+    }
+
+    .icon {
+        padding: 0.15rem;
+    }
+}
